@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script language = "JavaScript"> function changeSizeImage(im) {
+        var win ="width=600,height=600"
+        newWin = window.open(im.src,"newWin",win);
+        newWin.focus();
+    }</script>
+    <meta charset="utf-8">
+    <title>Data</title>
+    <meta name="description" content="Overview">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        table, th, td {
+            border: 3px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tfoot {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="Header">
+    <a href="../index.html" class="LogoWrapper"><img src="../img/SOC-Logo.png" alt="logo"></a>
+</div>
+<div class="box">
+    <div><a href="images.html" class="LogoWrapper"><img src="../img/Ovr.png"  alt="logo"></a></div>
+    <div><img src="../img/Dat.png" alt="logo" width="93%"></div>
+    <div><a href="lists.html" class="LogoWrapper"><img src="../img/About.png" alt="logo"></a></div>
+    <div><a href="forms.html" class="LogoWrapper"><img src="../img/Comm.png" alt="logo"></a></div>
+</div>
+<div class="IntroWrapper">
+    <p class="IntroText">Cyber-attacks have always attracted a lot of attention. Especially when their number increases significantly. </p>
+</div>
+<div class="Ingredients">
+    With the use of Twint we extracted tweets with words cybersecurity, cybercrime, cyberattacks, cyberpandemic on the ten languages. <br> We have 10 000 tweets for each country from top 10 attacked countries. After analyzing the date we tried to research attentively especially tweets in Russian and in English.
+    Collected information will be processed with the use of Python and VoyantTools.
+    To create visualizations in Tableau <br> we decided to analyze the top 10 cyber attacked countries.
+</div>
+
+<h1>So, what data we've collected? <br></h1>
+<table>
+    <tbody>
+    <tr>
+        <td width="450"><img src="../img/6.png" alt="logo" onclick="changeSizeImage(this)"></td>
+        <td>English tweets word frequency. As we can see from the line chart in Application 1, the most common words are cybercrime and cyberattacks along with security, which is no surprise. What is interesting, is that words frequency analysis also highlighted such words as ransomware, malware, fraud and business. Based on that, we can make a prediction that English speaking Twitter users concerned not only with the safety of their data but also with the safety of their financial activities. And the second conclusion might be that they are also concerned with the risks within the business field.  </td>
+    </tr>
+    <tr>
+        <td width="450"><img src="../img/10.png" alt="logo" onclick="changeSizeImage(this)"></td>
+        <td>English tweets topic modelling. The results of this analysis were not surprising as most topics started with the prefix cyber-. The results were divided into five groups and their interpretation could only be vague. The first and the second ones, presumably, lied within the field of cybersecurity. All of the others include some surprising part, such as “latvian”, “zeroday”, so their interpretation does not seem reasonable at all, as we do not want to speculate on the topic.
+            </td>
+    </tr>
+    <tr>
+        <td width="450"><img src="../img/11.png" alt="logo" onclick="changeSizeImage(this)"></td>
+        <td>English tweets collocations. Here we can see that even though words with the prefix cyber- still highly present, there are some new parts, which could represent the concrete topics of cybercrimes, the way they could be made and the spheres that are in danger.</td>
+    </tr>
+    <tr>
+        <td width="450"><img src="../img/12.png" alt="logo" onclick="changeSizeImage(this)"></td>
+        <td>English tweets cloud of words and words frequency. The most common ones are, apparently, links to the third party along with the cyber- words. Also popular the words, meaningfully connected with the research topic. </td>
+    </tr>
+    <tr>
+        <td width="450"><img src="../img/14.png" alt="logo" onclick="changeSizeImage(this)"></td>
+        <td>Russian tweets cloud of words and words frequency. Links to the third party also common in Russia. But interesting enough, there are also such words as “USA”, “toughen up”, “Russian”, “punishments”, “responsibility”, which, joined together give us a gloomy picture.</td>
+    </tr>
+    <tr>
+        <td width="450"><img src="../img/16.png" alt="logo" onclick="changeSizeImage(this)"></td>
+        <td>Number of tweets rate per country. The graph is showing that the interest in the research topic gradually grew, only to show skyrocketing results this year. Interesting enough, if we filter and take a look at the tweets number per country, we will see different results. For example, Russia and China show a decrease in interest in the topic in recent years. </td>
+    </tr>
+    <tr>
+        <td width="450"><img src="../img/17.png" alt="logo" onclick="changeSizeImage(this)"></td>
+        <td>English tweets ratio. As we can see from the bubble chart, the leading language is still English, but other languages are also present. Most frequently those hashtags were used in Germany, India, Italia, Indonesia.</td>
+    </tr>
+    <tr>
+        <td width="450"><img src="../img/20.png" alt="logo" onclick="changeSizeImage(this)"></td>
+        <td>Most popular tweets. Surprisingly, leaders in popularity were not in English, they were from India, Ukraine and Turkey. Also, worth notice that tweets on the topic from China were the least popular.</td>
+    </tr>
+    </tbody>
+</table>
+<div class="HowToMake">
+    <h3 class="SubHeader">Some statistics</h3>
+    <ol class="MethodWrapper">
+        <li>Cybercrime costs the global economy about 1 trillion — 50% more than that predicted in 2018. Also, it is more than 1% of the global GDP. </li>
+        <li>The average cost of a data breach in 2020 was a whopping  $3.86 million. In 2021 it was $4.24 million.</li>
+        <li>A data breach compromising 1-10 million records costs $50 million on average, whereas one compromising 50 million records can cost as much as $392 million.</li>
+    </ol>
+    <h3 class="SubHeader">What about 2021?</h3>
+</div>
+<table>
+    <tbody>
+    <tr>
+        <td>December 2021</td>
+        <td>Hackers targeted multiple Southeast Asian governments over the past 9 months using custom malware linked to Chinese state-sponsored groups. Many of the nations targeted are currently engaged in disputes with China over territorial claims in the South China Sea. </td>
+    </tr>
+    <tr>
+        <td>November 2021</td>
+        <td>A Russian-speaking group targeted the personal information of around 3,500 individuals, including government officials, journalists, and human rights activists. The group obtained access to private email accounts and financial details, and operated malware on Android Center for Strategic and International Studies (CSIS) | Washington, D.C. and Windows devices.
+        </td>
+    </tr>
+    <tr>
+        <td>October 2021</td>
+        <td>A Chinese-linked hacking group gained access to calling records and text messages from telecommunication carriers across the globe, according to a report from CrowdStrike. The report outlines the group began its cyberattacks in 2016 and infiltrated at least 13 telecommunications networks.
+        </td>
+    </tr>
+    <tr>
+        <td>September 2021</td>
+        <td>The EU formally blamed Russia for its involvement in the 'Ghostwriter’ cybercampaign, which targeted the elections and political systems of several member states. Since 2017, Russian operators hacked the social media accounts of government officials and news websites, with the goal of creating distrust in U.S. and NATO forces.
+        </td>
+    </tr>
+    <tr>
+        <td>September 2021</td>
+        <td>The EU formally blamed Russia for its involvement in the 'Ghostwriter’ cybercampaign, which targeted the elections and political systems of several member states. Since 2017, Russian operators hacked the social media accounts of government officials and news websites, with the goal of creating distrust in U.S. and NATO forces.
+        </td>
+    </tr>
+    <tr>
+        <td>July 2021</td>
+        <td>Estonia stated a Tallinn-based hacker downloaded 286,438 ID photos from government database, exposing a vulnerability in a platform managed by their Information System Authority (RIA).
+        </td>
+    </tr>
+    </tbody>
+</table>
+</html>
+

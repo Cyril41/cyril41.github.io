@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <style>
+        .menu {
+            display: block;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .menu li {
+            background: rgb(255, 255, 255);
+        }
+
+        .menu li:hover {
+            background: rgb(121, 255, 255);
+            cursor: pointer;
+        }
+
+        .menu li>a {
+            text-decoration: none;
+            color: #000000;
+            display: grid;
+            padding: 20px 150px;
+            border-radius: 15px;
+        }
+    </style>
+    <meta name="description" content="Overview">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="Header">
+    <a href="index.html" class="LogoWrapper"><img src="img/SOC-Logo.png" alt="logo"></a>
+</div>
+<div class="card js-card">
+    <div class="card__wrapper">
+        <div class="card__side is-active">
+            <h1>Welcome!
+            Covid pandemic appeared to be one of the main threats to our world.
+            But was it the only problem?
+            Here you can find an answer.</h1>
+        </div>
+        <div class="card__side card__side--back">
+            <ul class="menu">
+                <li><a href="pages/images.html" class="LogoWrapper"><img src="img/Ovr.png"  alt="logo"></a></li>
+                <li><a href="pages/tables.html" class="LogoWrapper"><img src="img/Dat.png" alt="logo"></a></li>
+                <li><a href="pages/lists.html" class="LogoWrapper"><img src="img/About.png" alt="logo"></a></li>
+                <li><a href="pages/forms.html" class="LogoWrapper"><img src="img/Comm.png" alt="logo"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<button id="btn">Find out!</button>
+
+
+<script>
+    let cardTransitionTime = 500;
+    let switching = false;
+
+    const button = document.getElementById('btn');
+    button.addEventListener('click', flipCard);
+
+    function flipCard() {
+        if (switching) {
+            return false
+        }
+        switching = true
+
+        const card = document.getElementsByClassName('js-card')[0];
+        card.classList.toggle('is-switched');
+        window.setTimeout(function () {
+            card.firstElementChild.firstElementChild.classList.toggle('is-active');
+            card.firstElementChild.lastElementChild.classList.toggle('is-active');
+            switching = false
+        }, cardTransitionTime / 2)
+    }
+
+    const button_2 = document.getElementById('btn_2');
+    button_2.addEventListener('click', flipCard_2);
+
+    function flipCard_2() {
+        if (switching) {
+            return false
+        }
+        switching = true
+
+        const card = document.getElementsByClassName('js-card_2')[0];
+        card.classList.toggle('is-switched');
+        window.setTimeout(function () {
+            card.firstElementChild.firstElementChild.classList.toggle('is-active');
+            card.firstElementChild.lastElementChild.classList.toggle('is-active');
+            switching = false
+        }, cardTransitionTime / 2)
+    }
+</script>
+
+
+</body>
+</html>
